@@ -58,13 +58,13 @@ const CountyRent = () => {
           {isLoaded ? <GraphData data={items ?? []} yAxis={`Median Rent ($)`} /> : <>Loading...</>}
           <TextContainer>
             <TextHeader>MEDIAN RENT</TextHeader>
-            The graph to the left displays the median rent in years over time in various Bay Area counties. Note that
-            the top 4 counties for highest rent are San Francisco, San Mateo, Santa Clara, and Marin (in that order).
-            They're the same top four counties for life expectancy.
+            This graph displays the median rent in years over time in various Bay Area counties. Note that the top 4
+            counties for highest rent are San Francisco, San Mateo, Santa Clara, and Marin (in that order). They're the
+            same top four counties for life expectancy.
             <br />
             <LineBreak />
             Unfortunately, it seems like years of life have an economic correlation. Some have theorized this could be
-            the result of differences in economic stress or access to medical care.
+            the result of differences in economic stress or access to medical care. Dig into the data below.
           </TextContainer>
         </ContentContainer>
       </GeneralBayBackground>

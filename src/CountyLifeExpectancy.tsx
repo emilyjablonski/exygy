@@ -58,14 +58,13 @@ const CountyRent = () => {
           {isLoaded ? <GraphData data={items ?? []} yAxis={`Life Expectancy (Years)`} /> : <>Loading...</>}
           <TextContainer>
             <TextHeader>LIFE EXPECTANCY</TextHeader>
-            The graph to the left displays the life expectancy in years over time in various Bay Area counties. Note
-            that the top 4 counties for longest life expectancy are San Mateo, Santa Clara, Marin, and San Francisco (in
-            that order).
+            This graph displays life expectancy in years over time in various Bay Area counties. Note that the top 4
+            counties for longest life expectancy are San Mateo, Santa Clara, Marin, and San Francisco (in that order).
             <br />
             <LineBreak />
-            Many factors are involved in determining one's life expectancy (race, physique, diet, environment, etc). At
-            a high level, location seems to be a useful indicator for life expectancy as the other factors mentioned
-            tend to correlate with geography.
+            Many factors are involved in determining life expectancy (race, physique, diet, environment, etc). At a high
+            level, location seems to be a useful indicator for life expectancy as the other factors mentioned tend to
+            correlate with geography. Dig into the data below.
           </TextContainer>
         </ContentContainer>
       </SolanoCountyBackground>
