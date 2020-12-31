@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styled from '@emotion/styled'
+import CountyLifeExpectancy from './CountyLifeExpectancy'
+import CountyRent from './CountyRent'
+import Header from './Header'
 
-function App() {
+const App = () => {
+  const AppContainer = styled.div({
+    display: `flex`,
+    alignItems: `center`,
+    flexDirection: `column`,
+    backgroundColor: `#7F7FBA`,
+    fontColor: `#87BBA2`,
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppContainer>
+      <Header />
+      <CountyLifeExpectancy />
+      <CountyRent />
+    </AppContainer>
+  )
 }
 
-export default App;
+export default App
