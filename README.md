@@ -1,3 +1,7 @@
+# Welcome :)
+
+Welcome to my project! I've found that before running any of the commands below, it's useful to just run `yarn` by itself first.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

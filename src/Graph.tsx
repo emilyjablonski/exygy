@@ -105,6 +105,7 @@ const Graph = (props: GraphProps) => {
         },
       })
     }
+    // eslint-disable-next-line
   }, [])
 
   return (

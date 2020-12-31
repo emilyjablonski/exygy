@@ -16,7 +16,7 @@ export type DataDict = {
 
 // Takes in a string list, returns an alphabetically sorted string list with all duplicates removed
 export const removeDuplicatesAndSort = (input: string[]) => {
-  return input?.filter((line, index) => input.indexOf(line) == index).sort() ?? []
+  return input?.filter((line, index) => input.indexOf(line) === index).sort() ?? []
 }
 
 // lines: string[], representing the lines that will be plotted (counties)

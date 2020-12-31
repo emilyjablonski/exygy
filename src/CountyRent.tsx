@@ -16,7 +16,7 @@ import Table from './Table'
 const CountyRent = () => {
   const [isLoaded, setIsLoaded] = useState(false)
   const [items, setItems] = useState<DataRow[]>()
-  const [error, setError] = useState(undefined)
+  // const [error, setError] = useState(undefined)
 
   type RentData = {
     year: string
@@ -42,11 +42,11 @@ const CountyRent = () => {
           })
           setItems(data)
           setIsLoaded(true)
-        },
-        error => {
-          setIsLoaded(true)
-          setError(error)
         }
+        // error => {
+        //   setIsLoaded(true)
+        //   setError(error)
+        // }
       )
   }, [])
 
